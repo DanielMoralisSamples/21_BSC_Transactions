@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!--Head Content-->
+        <title>BSC Transactions dAPP</title>
+        <!-- Required meta tags -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Links -->
+        <!-- Make It Pretty Import the Bootstrap stylesheet -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    </head>
+    <body>
+        <main>
+            <div class="container">
+                <div class="mt-2 mb-2">
+                   <h1>BSC Transactions</h1>
+                </div>
+                <div class="mt-2 mb-2">
+                    <input class="form-control" id="username" type="text" placeholder="Username"></input>
+                </div>
+                <div class="mt-2 mb-2">
+                    <input class="form-control" id="email" type="text" placeholder="Email"></input>
+                </div>
+                <div class="mt-2 mb-2">
+                    <button class="btn btn-dark"id="login" onclick="login();"> Connect Metamask</button>
+                </div>
+                <hr>
+                <div class="mt-2 mb-2">
+                    <h1>Transfer Native Tokens</h1>
+                 </div>
+                 <div class="mt-2 mb-2">
+                     <input disabled="true" class="form-control" id="nativeBalance" type="text" placeholder="BNB Balance"></input>
+                 </div>
+                 <div class="mt-2 mb-2">
+                     <input disabled="true" class="form-control" id="nativeAmount" type="text" placeholder="Amount to Transfer"></input>
+                 </div>
+                 <div class="mt-2 mb-2">
+                    <input disabled="true" class="form-control" id="nativeTransferTo" type="text" placeholder="Transfer to Address"></input>
+                </div>
+                 <div class="mt-2 mb-2">
+                     <button disabled="true" class="btn btn-dark"id="transferNative" onclick="transferNative();"> Transfer BNB</button>
+                 </div>
+                 <hr>
+                 <div class="mt-2 mb-2">
+                    <h1>Transfer BEP20 Tokens</h1>
+                 </div>
+                 <div class="mt-2 mb-2">
+                     <input disabled="true" class="form-control" id="tokenBalance" type="text" placeholder="BEP20 Balance"></input>
+                 </div>
+                 <div class="mt-2 mb-2">
+                     <input disabled="true" class="form-control" id="tokenAmount" type="text" placeholder="Amount to Transfer"></input>
+                 </div>
+                 <div class="mt-2 mb-2">
+                    <input disabled="true" class="form-control" id="tokenTransferTo" type="text" placeholder="Transfer to Address"></input>
+                </div>
+                 <div class="mt-2 mb-2">
+                     <button disabled="true" class="btn btn-dark"id="transferToken" onclick="transferToken();"> Transfer Dan</button>
+                 </div>
+                 <hr>
+                 <div>
+                     <div id="resultSpace"></div>
+                 </div>
+            </div>
+        </main>
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
+    <script src="https://unpkg.com/moralis/dist/moralis.js"></script>
+    <script src="static/logic.js"></script>
+    </body>
+</html>
